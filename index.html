@@ -7,11 +7,13 @@
     <title>
         Fresh Food
     </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -46,22 +48,42 @@
     </a>
     <!-- END BACK TO TOP BTN -->
     <!-- TOP NAVIGATION -->
+
+    <!-- <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container-fluid">
+            <a class="logo m-2 " href="#home">Vietfood</a>
+
+            <ul class="navbar-nav">
+                <li class="nav-item menu-item pt-4">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item menu-item pt-4">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item menu-item pt-4">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+
     <div class="nav">
+        <a href="#home">
+            <div class="logo r-9 mt-3" href="#home">
+                Vietfood
+            </div>
+        </a>
         <div class="menu-wrap">
-            <a href="#home">
-                <div class="logo">
-                    Freshfood
-                </div>
-            </a>
             <div class="menu h-xs">
                 <a href="#home">
                     <div class="menu-item active">
-                        Home
+                        Trang Chủ
                     </div>
                 </a>
                 <a href="#about">
                     <div class="menu-item">
-                        About
+                        Giới thiệu
                     </div>
                 </a>
                 <a href="#food-menu-section">
@@ -71,7 +93,7 @@
                 </a>
                 <a href="#testimonial">
                     <div class="menu-item">
-                        Testimonials
+                        Đánh giá
                     </div>
                 </a>
             </div>
@@ -84,23 +106,20 @@
     </div>
     <!-- END TOP NAVIGATION -->
     <!-- SECTION HOME -->
-    <section id="home" class="fullheight align-items-center bg-img bg-img-fixed"
-        style="background-image: url(assets/brooke-lark-08bOYnH_r_E-unsplash.jpg);">
+    <section id="home" class="fullheight align-items-center bg-img bg-img-fixed" style="background-image: url(assets/brooke-lark-08bOYnH_r_E-unsplash.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-6 col-xs-12">
                     <div class="slogan">
                         <h1 class="left-to-right play-on-scroll">
-                            Freshfood
+                            Vietfood
                         </h1>
                         <p class="left-to-right play-on-scroll delay-2">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae eveniet ullam perferendis
-                            eos, nobis corrupti similique fuga ipsa minus at eius ipsam expedita quam aliquam
-                            perspiciatis voluptate qui dolore soluta.
+                            Có lịch sử lâu đời và vị trí địa lý khác biệt nên mỗi vùng miền trên lãnh thổ hình chữ S luôn có những món ăn mang hương vị riêng, không thể hòa lẫn. Từ đó góp phần tạo nên nền ẩm thực Việt Nam đa sắc, thu hút mọi thực khách trong và ngoài nước.
                         </p>
                         <div class="left-to-right play-on-scroll delay-4">
                             <button>
-                                Order now
+                                Khám phá ngay
                             </button>
                         </div>
                     </div>
@@ -114,19 +133,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-7 h-xs">
-                    <img src="assets/dan-gold-4_jhDO54BYg-unsplash.jpg" alt=""
-                        class="fullwidth left-to-right play-on-scroll">
+                    <img src="assets/dan-gold-4_jhDO54BYg-unsplash.jpg" alt="" class="fullwidth left-to-right play-on-scroll">
                 </div>
                 <div class="col-5 col-xs-12 align-items-center">
                     <div class="about-slogan right-to-left play-on-scroll">
                         <h3>
-                            <span class="primary-color">We</span> create <span class="primary-color">delicious</span>
-                            memories for <span class="primary-color">you</span>
+                            <span class="primary-color">We</span> create <span class="primary-color">delicious</span> memories for <span class="primary-color">you</span>
                         </h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus placeat et eos,
-                            dignissimos voluptatem tempora necessitatibus doloribus! Eum qui doloribus odio dolor
-                            tenetur nihil impedit vero magni, distinctio soluta!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus placeat et eos, dignissimos voluptatem tempora necessitatibus doloribus! Eum qui doloribus odio dolor tenetur nihil impedit vero magni, distinctio soluta!
                         </p>
                     </div>
                 </div>
@@ -135,17 +150,275 @@
     </section>
     <!-- END SECION ABOUT -->
     <!-- FOOD MENU SECTION -->
-    <section class="align-items-center bg-img bg-img-fixed" id="food-menu-section"
-        style="background-image: url(assets/katherine-chase-4MMK78S7eyk-unsplash.jpg);">
+    <section class="align-items-center bg-img bg-img-fixed" id="food-menu-section" style="background-image: url(assets/katherine-chase-4MMK78S7eyk-unsplash.jpg);">
         <div class="container">
             <div class="food-menu">
                 <h1>
-                    What will <span class="primary-color">you</span> eat today?
+                    <B><span class="primary-color">MIỀN BẮC</span></B>
                 </h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque alias aliquam eveniet, iure
-                    praesentium dicta ex dolorum inventore itaque minus repudiandae, odio provident? Velit architecto
-                    natus expedita non? Odio, dolorum.
+                    Ẩm thực miền Bắc toát lên sự tinh tế, nhẹ nhàng thanh tao. Dân dã, dung dị nhưng vẫn đủ tinh tế để tạo ấn tượng sắc nét về một nền ẩm thực của đất kinh kì trên bản đồ ẩm thực Việt Nam. Nét đặc trưng phải kể đến trong ẩm thực miền Bắc chính là sự hài hòa
+                    trong cảm quan, hương vị rất vừa phải, không quá chua, quá cay, quá mặn hay quá nồng. Ẩm thực miền Bắc đề cao sự thanh tao, đạm bạc nhưng vẫn tôn lên được những hương vị tinh túy của những món ăn.
+                </p>
+                <!-- <div class="food-category">
+                    <div class="zoom play-on-scroll">
+                        <button class="active" data-food-type="all">
+                            All food
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-2">
+                        <button data-food-type="salad">
+                            Salad
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-4">
+                        <button data-food-type="lorem">
+                            Lorem
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-6">
+                        <button data-food-type="ipsum">
+                            Ipsum
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-8">
+                        <button data-food-type="dolor">
+                            Dolor
+                        </button>
+                    </div>
+                </div> -->
+
+                <div class="food-item-wrap all" data-bs-toggle="modal" data-bs-target="#modal1">
+                    <div class="food-item salad-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url(assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class="bx bx-cart-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal for image -->
+
+                    <div id="modal1" class="modal fade" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <div class="modal-header text-center b-block">
+                                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                                    <h2 class="modal-title">
+                                        <i class="fas fa-lock"></i>Dang nhap
+                                    </h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="usernameInput">
+                                                <i class="fas fa-user"></i>Nguoi dung:
+                                            </label>
+                                            <input type="text" class="form-control" placeholder="Nhap Ten Nguoi Dung" id="username">
+                                        </div>
+                                        <div class="form-group ">
+                                            <label for="passwordInput">
+                                                <i class="fas fa-eye"></i>Mat khau:
+                                            </label>
+                                            <input type="text" class="form-control" placeholder="Nhap Password" id="password">
+                                        </div>
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input">
+                                            <label class="form-check-label">Ghi nho toi</label>
+                                        </div>
+                                        <button class="btn btn-success btn-block">
+                                            <i class="fas fa-power-off "></i>Dang nhap
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#" class="btn btn-danger mr-auto" data-bs-dismiss="modal">
+                                        <i class="fas fa-times"></i>Huy bo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--end modal for image -->
+
+                    <div class="food-item lorem-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item ipsum-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/jonathan-farber-OCNqOLeCwOc-unsplash.jpg');">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item lorem-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item dolor-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/carly-jayne-Lv174o7fn7Y-unsplash.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item salad-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item lorem-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item dolor-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/carly-jayne-Lv174o7fn7Y-unsplash.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END FOOD MENU SECTION -->
+
+    <!-- SECTION 2 -->
+    <section class="align-items-center bg-img bg-img-fixed" id="food-menu-section" style="background-image: url(assets/katherine-chase-4MMK78S7eyk-unsplash.jpg);">
+        <div class="container">
+            <div class="food-menu">
+                <h1>
+                    <B><span class="primary-color">MIỀN BẮC</span></B>
+                </h1>
+                <p>
+                    Ẩm thực miền Bắc toát lên sự tinh tế, nhẹ nhàng thanh tao. Dân dã, dung dị nhưng vẫn đủ tinh tế để tạo ấn tượng sắc nét về một nền ẩm thực của đất kinh kì trên bản đồ ẩm thực Việt Nam. Nét đặc trưng phải kể đến trong ẩm thực miền Bắc chính là sự hài hòa
+                    trong cảm quan, hương vị rất vừa phải, không quá chua, quá cay, quá mặn hay quá nồng. Ẩm thực miền Bắc đề cao sự thanh tao, đạm bạc nhưng vẫn tôn lên được những hương vị tinh túy của những món ăn.
                 </p>
                 <div class="food-category">
                     <div class="zoom play-on-scroll">
@@ -179,8 +452,7 @@
                     <div class="food-item salad-type">
                         <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img">
-                                <div class="img-holder bg-img"
-                                    style="background-image: url(assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);"></div>
+                                <div class="img-holder bg-img" style="background-image: url(assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);"></div>
                             </div>
                             <div class="item-info">
                                 <div>
@@ -201,8 +473,7 @@
                     <div class="food-item lorem-type">
                         <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img">
-                                <div class="img-holder bg-img"
-                                    style="background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');"></div>
+                                <div class="img-holder bg-img" style="background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');"></div>
                             </div>
                             <div class="item-info">
                                 <div>
@@ -223,8 +494,7 @@
                     <div class="food-item ipsum-type">
                         <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img">
-                                <div class="img-holder bg-img"
-                                    style="background-image: url('assets/jonathan-farber-OCNqOLeCwOc-unsplash.jpg');">
+                                <div class="img-holder bg-img" style="background-image: url('assets/jonathan-farber-OCNqOLeCwOc-unsplash.jpg');">
                                 </div>
                             </div>
                             <div class="item-info">
@@ -246,8 +516,7 @@
                     <div class="food-item lorem-type">
                         <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img">
-                                <div class="img-holder bg-img"
-                                    style="background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');"></div>
+                                <div class="img-holder bg-img" style="background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');"></div>
                             </div>
                             <div class="item-info">
                                 <div>
@@ -268,8 +537,7 @@
                     <div class="food-item dolor-type">
                         <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img">
-                                <div class="img-holder bg-img"
-                                    style="background-image: url('assets/carly-jayne-Lv174o7fn7Y-unsplash.jpg');"></div>
+                                <div class="img-holder bg-img" style="background-image: url('assets/carly-jayne-Lv174o7fn7Y-unsplash.jpg');"></div>
                             </div>
                             <div class="item-info">
                                 <div>
@@ -290,8 +558,7 @@
                     <div class="food-item salad-type">
                         <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img">
-                                <div class="img-holder bg-img"
-                                    style="background-image: url('assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg');"></div>
+                                <div class="img-holder bg-img" style="background-image: url('assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg');"></div>
                             </div>
                             <div class="item-info">
                                 <div>
@@ -312,8 +579,7 @@
                     <div class="food-item lorem-type">
                         <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img">
-                                <div class="img-holder bg-img"
-                                    style="background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');"></div>
+                                <div class="img-holder bg-img" style="background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');"></div>
                             </div>
                             <div class="item-info">
                                 <div>
@@ -334,8 +600,7 @@
                     <div class="food-item dolor-type">
                         <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img">
-                                <div class="img-holder bg-img"
-                                    style="background-image: url('assets/carly-jayne-Lv174o7fn7Y-unsplash.jpg');"></div>
+                                <div class="img-holder bg-img" style="background-image: url('assets/carly-jayne-Lv174o7fn7Y-unsplash.jpg');"></div>
                             </div>
                             <div class="item-info">
                                 <div>
@@ -356,7 +621,223 @@
             </div>
         </div>
     </section>
-    <!-- END FOOD MENU SECTION -->
+    <!-- END SECTION 2 -->
+
+    <!-- SECTION 3 -->
+    <section class="align-items-center bg-img bg-img-fixed" id="food-menu-section" style="background-image: url(assets/katherine-chase-4MMK78S7eyk-unsplash.jpg);">
+        <div class="container">
+            <div class="food-menu">
+                <h1>
+                    <B><span class="primary-color">MIỀN BẮC</span></B>
+                </h1>
+                <p>
+                    Ẩm thực miền Bắc toát lên sự tinh tế, nhẹ nhàng thanh tao. Dân dã, dung dị nhưng vẫn đủ tinh tế để tạo ấn tượng sắc nét về một nền ẩm thực của đất kinh kì trên bản đồ ẩm thực Việt Nam. Nét đặc trưng phải kể đến trong ẩm thực miền Bắc chính là sự hài hòa
+                    trong cảm quan, hương vị rất vừa phải, không quá chua, quá cay, quá mặn hay quá nồng. Ẩm thực miền Bắc đề cao sự thanh tao, đạm bạc nhưng vẫn tôn lên được những hương vị tinh túy của những món ăn.
+                </p>
+
+                <!-- <div class="food-category">
+                    <div class="zoom play-on-scroll">
+                        <button class="active" data-food-type="all">
+                            Tất cả
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-2">
+                        <button data-food-type="salad">
+                            Canh
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-4">
+                        <button data-food-type="lorem">
+                            xào
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-6">
+                        <button data-food-type="ipsum">
+                            B
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-8">
+                        <button data-food-type="dolor">
+                            Dolor
+                        </button>
+                    </div>
+                </div> -->
+
+                <div class="food-item-wrap all">
+                    <div class="food-item salad-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url(assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class="bx bx-cart-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item lorem-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item ipsum-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/jonathan-farber-OCNqOLeCwOc-unsplash.jpg');">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item lorem-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item dolor-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/carly-jayne-Lv174o7fn7Y-unsplash.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item salad-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item lorem-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item dolor-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/carly-jayne-Lv174o7fn7Y-unsplash.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION 3 -->
+
     <!-- TESTIMONIAL SECTION -->
     <section id="testimonial">
         <div class="container">
@@ -365,12 +846,9 @@
                     <div class="review-wrap zoom play-on-scroll delay-2">
                         <div class="review-content">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore nisi non
-                                molestias, minus laboriosam nostrum impedit iure facilis odio unde quia ad sunt corrupti
-                                dolores ratione voluptatibus quidem explicabo.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore nisi non molestias, minus laboriosam nostrum impedit iure facilis odio unde quia ad sunt corrupti dolores ratione voluptatibus quidem explicabo.
                             </p>
-                            <div class="review-img bg-img"
-                                style="background-image: url(assets/close-up-portrait-cute-young-woman-holding-textbook-colored-pencils-posing-studio-isolated-pink_176532-9674.jpg);">
+                            <div class="review-img bg-img" style="background-image: url(assets/close-up-portrait-cute-young-woman-holding-textbook-colored-pencils-posing-studio-isolated-pink_176532-9674.jpg);">
                             </div>
                         </div>
                         <div class="review-info">
@@ -392,13 +870,9 @@
                         <div class="review-wrap active">
                             <div class="review-content">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore nisi non
-                                    molestias, minus laboriosam nostrum impedit iure facilis odio unde quia ad sunt
-                                    corrupti
-                                    dolores ratione voluptatibus quidem explicabo.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore nisi non molestias, minus laboriosam nostrum impedit iure facilis odio unde quia ad sunt corrupti dolores ratione voluptatibus quidem explicabo.
                                 </p>
-                                <div class="review-img bg-img"
-                                    style="background-image: url(assets/michael-dam-mEZ3PoFGs_k-unsplash.jpg);">
+                                <div class="review-img bg-img" style="background-image: url(assets/michael-dam-mEZ3PoFGs_k-unsplash.jpg);">
                                 </div>
                             </div>
                             <div class="review-info">
@@ -420,12 +894,9 @@
                     <div class="review-wrap zoom play-on-scroll delay-4">
                         <div class="review-content">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore nisi non
-                                molestias, minus laboriosam nostrum impedit iure facilis odio unde quia ad sunt corrupti
-                                dolores ratione voluptatibus quidem explicabo.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore nisi non molestias, minus laboriosam nostrum impedit iure facilis odio unde quia ad sunt corrupti dolores ratione voluptatibus quidem explicabo.
                             </p>
-                            <div class="review-img bg-img"
-                                style="background-image: url(assets/portrait-happy-young-man_171337-21716.jpg);">
+                            <div class="review-img bg-img" style="background-image: url(assets/portrait-happy-young-man_171337-21716.jpg);">
                             </div>
                         </div>
                         <div class="review-info">
@@ -455,9 +926,7 @@
                         Freshfood
                     </h1>
                     <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, quas harum? Atque eius
-                        quaerat fuga sint molestiae illo corrupti vitae voluptatibus. Dicta rerum est delectus
-                        perspiciatis nemo nihil autem! Doloremque?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, quas harum? Atque eius quaerat fuga sint molestiae illo corrupti vitae voluptatibus. Dicta rerum est delectus perspiciatis nemo nihil autem! Doloremque?</p>
                     <br>
                     <p>Email: example@mail.com</p>
                     <p>Phone: +00 123 456 789</p>
@@ -494,9 +963,7 @@
                         Subscribe & media
                     </h1>
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto aspernatur doloremque rerum nam
-                        ullam obcaecati error asperiores temporibus quo eum eaque sed odio vitae accusantium, dolorem
-                        nihil molestiae deserunt maxime!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto aspernatur doloremque rerum nam ullam obcaecati error asperiores temporibus quo eum eaque sed odio vitae accusantium, dolorem nihil molestiae deserunt maxime!</p>
                     <div class="input-group">
                         <input type="text" placeholder="Enter your email">
                         <button>
